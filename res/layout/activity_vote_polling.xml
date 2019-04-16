@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VotePolling">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="VOTE" android:gravity="center"
+    android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/coke"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="250dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"
+            android:onClick="voteCoke"
+            android:src="@drawable/coke2"/>
+        <ImageView
+            android:id="@+id/pepsi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="250dp"
+            android:background="@color/colorAccent"
+            android:onClick="votePepsi"
+            android:src="@drawable/pepsi"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkWinner"
+        android:text="Check Results"/>
+    <TextView
+        android:id="@+id/resultsOfVotes"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
